@@ -7,37 +7,22 @@ body {
   margin: 0;
 }
 
-#overview {
-  background: url("/images/freedom.jpeg");
-  width: 100%;
-  height: 528px;
-  padding: 10px;
-}
+/* HEADER SECTION */
 
-h1 {
-  font-size: 3rem;
-}
-
-.section-title {
-  color: darkseagreen;
-}
-
-#overview h1 {
-  color: white;
-  font-family: "Bitter", sans-serif;
-}
-
+/* header background and spacing */
 .main-header {
-  background: darkseagreen;
+  background: #2ddf5c;
   padding: 8px 16px;
   width: 100%;
 }
 
+/* set header company name div/container in-line block */
 .main-header > div {
   display: inline-block;
   vertical-align: middle;
 }
 
+/* set company name styling */
 .main-header__brand {
   color: black;
   text-decoration: none;
@@ -45,24 +30,26 @@ h1 {
   font-size: 22px;
 }
 
+/* set nav container display inline */
 .main-nav {
   display: inline-block;
   text-align: right;
   width: calc(100% - 90px);
   vertical-align: middle;
 }
-
+/* set nav items styling */
 .main-nav__items {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
+/* set individua nav item styling */
 .main-nav__item {
   display: inline-block;
   margin: 0 15px;
 }
 
+/* set nav item anchor text */
 .main-nav__item a {
   color: green;
   text-decoration: none;
@@ -93,4 +80,176 @@ h1 {
   color: brown;
   background: white;
   border: none;
+}
+/* OVERVIEW SECTION */
+
+#overview {
+  background: url("/images/freedom.jpeg");
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+}
+
+#overview h1 {
+  color: white;
+  font-family: "Bitter", sans-serif;
+}
+
+.section-title {
+  color: #2ddf5c;
+  text-align: center;
+}
+
+/* PLANS SECTION */
+
+#plans {
+  text-align: center;
+}
+
+/* set each plan section styling */
+.plan {
+  background: #d5ffdc;
+  text-align: center;
+  padding: 16px;
+  margin: 8px;
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+/* highlight recommended plan styling */
+.plan--highlighted {
+  background: #2ddf5c;
+  color: white;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.plan__title {
+  color: #0e4f1f;
+}
+
+.plan__price {
+  color: #858585;
+}
+
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+
+/* recommnded plan anotation styling */
+.plan__annotation {
+  background: white;
+  color: #2ddf5c;
+  padding: 8px;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+/* set default price  */
+.plan__features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* set line spacing for plan features */
+.plan__features li {
+  margin: 8px 0;
+}
+
+/* KEY FEATURES SECTION */
+
+#key-features {
+  background: brown;
+  margin-top: 80px;
+  padding: 16px;
+}
+
+#key-features .section-title {
+  color: white;
+  margin: 32px;
+}
+
+.key-feature__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.key-feature {
+  display: inline-block;
+  width: 30%;
+  vertical-align: middle;
+}
+
+.key-feature__image {
+  background: #ffcede;
+  width: 128px;
+  border: 2px solid #424242;
+  border-radius: 50%;
+  height: 128px;
+  margin: auto;
+}
+
+.key-feature__description {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+/* FOOTER SECTION */
+
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
 }
