@@ -8,7 +8,7 @@ body {
 }
 
 #overview {
-  background: brown;
+  background: url("/images/freedom.jpeg");
   width: 100%;
   height: 528px;
   padding: 10px;
