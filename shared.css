@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  margin: 0;
+}
+
+/* HEADER SECTION */
+
+/* header background and spacing */
+.main-header {
+  background: #2ddf5c;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+/* set header company name div/container in-line block */
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* set company name styling */
+.main-header__brand {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* set nav container display inline */
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 90px);
+  vertical-align: middle;
+}
+/* set nav items styling */
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* set individua nav item styling */
+.main-nav__item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+/* set nav item anchor text */
+.main-nav__item a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 3px;
+}
+
+/* default styling for all nav links */
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+  border-bottom: 5px solid white;
+}
+
+/* add style for call to action */
+.main-nav__item--cta a {
+  color: white;
+  background: brown;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* override default style for call to action button */
+
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: brown;
+  background: white;
+  border: none;
+}
+
+.button {
+  background: #0e4f1f;
+  color: white;
+  font: inherit;
+  border: 1.5px solid #0e4f1f;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+}
+
+.button:focus {
+  outline: none;
+}
+
+/* FOOTER SECTION */
+
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer__link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: #ccc;
+}
