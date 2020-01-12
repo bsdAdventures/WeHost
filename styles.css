@@ -21,6 +21,8 @@
 
 #plans {
   text-align: center;
+  width: 80%;
+  margin: auto;
 }
 
 /* set each plan section styling */
