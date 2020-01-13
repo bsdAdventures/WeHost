@@ -2,6 +2,14 @@ main {
   padding-top: 32px;
 }
 
+.background {
+  background: url("../images/plans-background.jpg");
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
 /* set styles for default container */
 .package {
   width: 80%;
