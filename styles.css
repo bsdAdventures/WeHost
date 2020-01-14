@@ -2,15 +2,13 @@
 
 #overview {
   background: linear-gradient(to top, rgba(111, 233, 144, 0.6) 1%, transparent),
-    url("/images/freedom.jpeg") no-repeat;
+    url("images/freedom.jpeg") no-repeat;
   background-position: center center;
   background-size: cover;
-  /* background-image: linear-gradient(); */
-  /* background-image: radial-gradient(red, blue); */
   width: 100%;
   height: 528px;
-  padding: 10px;
-  margin-top: 43px;
+  padding: 0.7rem;
+  margin-top: 2.75rem;
   position: relative;
 }
 
@@ -39,8 +37,8 @@
 .plan {
   background: #d5ffdc;
   text-align: center;
-  padding: 16px;
-  margin: 8px;
+  padding: 1rem;
+  margin: 0.6rem;
   display: inline-block;
   width: 30%;
   vertical-align: middle;
@@ -73,9 +71,9 @@
 .plan__annotation {
   background: white;
   color: #2ddf5c;
-  padding: 8px;
+  padding: 0.6rem;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
+  border-radius: 0.6rem;
 }
 
 /* set default price  */
@@ -87,20 +85,20 @@
 
 /* set line spacing for plan features */
 .plan__features li {
-  margin: 8px 0;
+  margin: 0.6rem 0;
 }
 
 /* KEY FEATURES SECTION */
 
 #key-features {
   background: brown;
-  margin-top: 80px;
-  padding: 16px;
+  margin-top: 5rem;
+  padding: 1rem;
 }
 
 #key-features .section-title {
   color: white;
-  margin: 32px;
+  margin: 2rem;
 }
 
 .key-feature__list {
@@ -123,12 +121,12 @@
   border-radius: 50%;
   height: 128px;
   margin: auto;
-  padding: 20px;
+  padding: 1.3rem;
 }
 
 .key-feature__description {
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 20px;
+  font-size: 1.2rem;
 }
