@@ -1,7 +1,12 @@
 /* OVERVIEW SECTION */
 
 #overview {
-  background: url("/images/freedom.jpeg") no-repeat center;
+  background: linear-gradient(to top, rgba(111, 233, 144, 0.6) 1%, transparent),
+    url("/images/freedom.jpeg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  /* background-image: linear-gradient(); */
+  /* background-image: radial-gradient(red, blue); */
   width: 100%;
   height: 528px;
   padding: 10px;
@@ -118,6 +123,7 @@
   border-radius: 50%;
   height: 128px;
   margin: auto;
+  padding: 20px;
 }
 
 .key-feature__description {
