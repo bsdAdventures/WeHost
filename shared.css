@@ -15,7 +15,9 @@ body {
   padding: 8px 16px;
   width: 100%;
   position: fixed;
-  /* top: 0; */
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 /* set header company name div/container in-line block */
@@ -30,6 +32,12 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  height: 5%;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  height: 30px;
 }
 
 /* set nav container display inline */
