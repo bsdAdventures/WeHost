@@ -37,6 +37,28 @@ body {
   vertical-align: middle;
 }
 
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 /* set company name styling */
 .main-header__brand {
   color: black;
@@ -45,6 +67,7 @@ body {
   font-size: 1.4rem;
   height: 5%;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-header__brand img {
@@ -71,7 +94,8 @@ body {
 }
 
 /* set nav item anchor text */
-.main-nav__item a {
+.main-nav__item a,
+.mobile-nav__item a {
   color: green;
   text-decoration: none;
   font-weight: bold;
@@ -87,7 +111,8 @@ body {
 }
 
 /* add style for call to action */
-.main-nav__item--cta a {
+.main-nav__item--cta a,
+.mobile-nav__item--cta a {
   color: white;
   background: brown;
   padding: 0.5rem 1rem;
@@ -97,7 +122,9 @@ body {
 /* override default style for call to action button */
 
 .main-nav__item--cta a:hover,
-.main-nav__item--cta a:active {
+.main-nav__item--cta a:active,
+.mobile-nav__item--cta a:hover,
+.mobile-nav__item--cta a:active {
   color: brown;
   background: white;
   border: none;
@@ -152,4 +179,34 @@ body {
 .main-footer__link a:hover,
 .main-footer__link a:active {
   color: #ccc;
+}
+
+/* MOBILE nav */
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav__items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav__item {
+  margin: 1rem 0;
+}
+
+.mobile-nav__item a {
+  font-size: 1.5rem;
 }
