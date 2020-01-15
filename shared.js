@@ -8,26 +8,37 @@ var mobileNav = document.querySelector(".mobile-nav");
 //loop throuh button to add event listener for a click and set modal and backdrop to block
 choosePlan.forEach(item => {
   item.addEventListener("click", function() {
-    modal.style.display = "block";
-    backdrop.style.display = "block";
+    //add class open
+    modal.classList.add("open");
+    backdrop.classList.add("open");
   });
 });
 
 //remove backdrop on click
 backdrop.addEventListener("click", function() {
-  mobileNav.style.display = "none";
+  //remove side menu
+  mobileNav.classList.remove("open");
+  //remove backdrop and modal
   handleCloseModal();
 });
-//remove modal on click
-closeModal.addEventListener("click", handleCloseModal);
+
+if (closeModal) {
+  //remove modal on click
+  closeModal.addEventListener("click", handleCloseModal);
+}
+
 //show side menu
 hamBurgerMenu.addEventListener("click", function() {
-  mobileNav.style.display = "block";
-  backdrop.style.display = "block";
+  //remove class
+  mobileNav.classList.add("open");
+  backdrop.classList.add("open");
 });
 
-//resusable function
 function handleCloseModal() {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
+  //remove class
+  if (modal) {
+    modal.classList.remove("open");
+  }
+
+  backdrop.classList.remove("open");
 }
