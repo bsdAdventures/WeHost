@@ -70,7 +70,6 @@ set to hover over packages */
 #free-package {
   background: rgba(214, 254, 237, 0.95);
   float: right;
-  border-right: none;
   border-left: 4px solid #0e4f1f;
   text-align: right;
 }
@@ -90,4 +89,26 @@ set to hover over packages */
 
 #premium-package .package__subtitle {
   color: #bbbbbb;
+}
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .package {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
+  #free-package:hover,
+  #free-package:active {
+    border-right-color: brown;
+  }
 }
